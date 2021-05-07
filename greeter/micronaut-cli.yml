@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.sheikhimtiaz
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, gradle, graphql, http-client, http-session, java, java-application, jdbc-hikari, junit, logback, lombok, mockito, netty-server, openapi, postgres, readme, shade, testcontainers, yaml]

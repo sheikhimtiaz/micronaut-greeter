@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: greeter
+  session:
+    http:
+      cookie: true
+      header: true
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/greeterdb
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 'awesome'

@@ -1,4 +1,4 @@
-package sheikhimtiaz.entity;
+package greeter.entity;
 
 public class Guest {
     private Long id;

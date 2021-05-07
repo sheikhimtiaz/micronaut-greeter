@@ -1,4 +1,4 @@
-package sheikhimtiaz.controller;
+package greeter.controller;
 
 import io.micronaut.http.annotation.*;
 

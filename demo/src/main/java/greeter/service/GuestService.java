@@ -1,7 +1,7 @@
-package demo.service;
+package greeter.service;
 
-import demo.entity.Guest;
-import demo.repository.GuestRepository;
+import greeter.entity.Guest;
+import greeter.repository.GuestRepository;
 import lombok.AllArgsConstructor;
 
 import javax.inject.Singleton;

@@ -1,4 +1,4 @@
-package demo.entity;
+package greeter.entity;
 
 import lombok.*;
 

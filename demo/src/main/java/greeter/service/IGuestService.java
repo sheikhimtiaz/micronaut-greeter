@@ -1,6 +1,6 @@
-package demo.service;
+package greeter.service;
 
-import demo.entity.Guest;
+import greeter.entity.Guest;
 
 import java.util.List;
 

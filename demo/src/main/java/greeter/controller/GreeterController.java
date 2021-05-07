@@ -1,4 +1,4 @@
-package demo.controller;
+package greeter.controller;
 
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;

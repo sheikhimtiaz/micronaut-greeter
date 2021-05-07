@@ -1,7 +1,7 @@
-package demo.controller;
+package greeter.controller;
 
-import demo.entity.Guest;
-import demo.service.GuestService;
+import greeter.entity.Guest;
+import greeter.service.GuestService;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.*;
 import lombok.AllArgsConstructor;

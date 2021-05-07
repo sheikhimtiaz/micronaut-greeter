@@ -1,9 +1,11 @@
-package com.sheikhimtiaz.controllers;
+package demo.controller;
 
-import io.micronaut.http.annotation.*;
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
 
 @Controller("/greeter")
 public class GreeterController {

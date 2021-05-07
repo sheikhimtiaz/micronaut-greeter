@@ -1,4 +1,4 @@
-package hello.world;
+package Greeter;
 
 import io.micronaut.runtime.EmbeddedApplication;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import javax.inject.Inject;
 
 @MicronautTest
-class HelloWorldTest {
+class GreeterTest {
 
     @Inject
     EmbeddedApplication<?> application;

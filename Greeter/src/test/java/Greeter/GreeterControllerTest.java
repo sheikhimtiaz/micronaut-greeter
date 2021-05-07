@@ -1,4 +1,4 @@
-package hello.world;
+package Greeter;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.client.RxHttpClient;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import static org.junit.jupiter.api.Assertions.*;
 
 @MicronautTest
-public class GreetingControllerTest {
+public class GreeterControllerTest {
 
     @Inject
     @Client("/")
@@ -16,6 +16,6 @@ public class GreetingControllerTest {
 
     @Test
     public void testIndex() throws Exception {
-        assertEquals(HttpStatus.OK, client.toBlocking().exchange("/greeting/message").status());
+        assertEquals(HttpStatus.OK, client.toBlocking().exchange("/greeter/message").status());
     }
 }

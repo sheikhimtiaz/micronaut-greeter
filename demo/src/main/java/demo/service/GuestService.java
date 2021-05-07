@@ -2,35 +2,49 @@ package demo.service;
 
 import demo.entity.Guest;
 import demo.repository.GuestRepository;
+import lombok.AllArgsConstructor;
 
+import javax.inject.Singleton;
+import javax.transaction.Transactional;
 import java.util.List;
 
-public class GuestService {
+@Singleton
+@AllArgsConstructor
+public class GuestService implements IGuestService {
     private final GuestRepository guestRepository;
 
-    public List<Guest> getAllInterns() {
+    @Override
+    @Transactional
+    public List<Guest> getAllGuests() {
         return guestRepository.findAll();
     }
 
-    public Guest saveIntern(Guest intern) {
-        return guestRepository.save(intern);
+    @Override
+    @Transactional
+    public Guest saveGuest(Guest guest) {
+        return guestRepository.save(guest);
     }
 
-    public Guest updateIntern(Guest guestRequest) {
-        long internId = guestRequest.getId();
-        Guest guest = getInternById(internId);
+    @Override
+    @Transactional
+    public Guest updateGuest(Guest guestRequest) {
+        long GuestId = guestRequest.getId();
+        Guest guest = getGuestById(GuestId);
         guest.setName(guestRequest.getName());
         guest.setEmail(guestRequest.getEmail());
         guest.setCountry(guestRequest.getCountry());
         return guestRepository.save(guest);
     }
 
-    public void deleteInternById(long id) {
-        Guest intern = getInternById(id);
-        guestRepository.delete(intern);
+    @Override
+    @Transactional
+    public void deleteGuestById(long id) {
+        Guest guest = getGuestById(id);
+        guestRepository.delete(guest);
     }
 
-    public Guest getInternById(long internId) {
-        return guestRepository.findById(internId).orElseThrow(() -> new RuntimeException("No guest found for this id"));
+    @Override
+    public Guest getGuestById(long guestId) {
+        return guestRepository.findById(guestId).orElseThrow(() -> new RuntimeException("Guest not found!"));
     }
 }

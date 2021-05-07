@@ -1,6 +1,19 @@
 package demo;
 
 import io.micronaut.runtime.Micronaut;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Contact;
+import io.swagger.v3.oas.annotations.info.Info;
+import io.swagger.v3.oas.annotations.info.License;
+
+@OpenAPIDefinition(
+        info = @Info(
+                title = "greeter",
+                version = "0.1",
+                description = "My API",
+                contact = @Contact(name = "sheikhimtiaz", email = "imticorei54@gmail.com")
+        )
+)
 
 public class Application {
 

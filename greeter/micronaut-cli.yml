@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: sheikhimtiaz
+defaultPackage: greeter
 testFramework: junit
 sourceLanguage: java
 buildTool: gradle
